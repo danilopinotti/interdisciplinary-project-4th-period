@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="sackWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="297.0" prefWidth="515.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SackController">
+   <children>
+      <ComboBox fx:id="productBulk" layoutX="23.0" layoutY="90.0" onAction="#actionComboBulk" prefHeight="25.0" prefWidth="202.0" />
+      <ComboBox fx:id="finalType" layoutX="23.0" layoutY="140.0" onAction="#actionComboTypes" prefHeight="25.0" prefWidth="202.0" />
+      <ComboBox fx:id="finalProduct" disable="true" layoutX="23.0" layoutY="195.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="23.0" layoutY="42.0" text="Quantidade disponivel para ensacar (Kg):" />
+      <Label fx:id="quantityAvailable" layoutX="301.0" layoutY="42.0" text="\@quantity_source" />
+      <Label layoutX="23.0" layoutY="125.0" text="Tipo de produto final" />
+      <Label layoutX="280.0" layoutY="131.0" text="Quantidade:" />
+      <Slider fx:id="quantitySlide" layoutX="278.0" layoutY="151.0" max="0.0" prefHeight="16.0" prefWidth="195.0" />
+      <Label fx:id="quantitySlideValue" layoutX="367.0" layoutY="131.0" text="\@final_quantity" />
+      <Button fx:id="btnFinalize" layoutX="180.0" layoutY="245.0" mnemonicParsing="false" onAction="#actionOK" prefHeight="38.0" prefWidth="73.0" text="Finalizar">
+         <tooltip>
+            <Tooltip text="Ensacar produto" />
+         </tooltip></Button>
+      <Button fx:id="btnCancel" layoutX="259.0" layoutY="245.0" mnemonicParsing="false" onAction="#actionCancel" prefHeight="38.0" prefWidth="76.0" text="Cancelar" />
+      <Label layoutX="23.0" layoutY="75.0" text="Produto bruto" />
+      <Label layoutX="23.0" layoutY="180.0" text="Produto final" />
+   </children>
+</AnchorPane>
